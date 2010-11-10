@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>org.mokai</groupId>
+	<artifactId>mokai-sandbox</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<name>Mokai Sandbox</name>
+	<description>Sandbox for new Mokai Connectors</description>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.mokai</groupId>
+				<artifactId>mokai-spi</artifactId>
+				<version>${mokai.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<properties>
+		<mokai.version>0.1.0</mokai.version>
+	</properties>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<inherited>true</inherited>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<showDeprecation>false</showDeprecation>
+					<showWarnings>true</showWarnings>
+					<optimize>true</optimize>
+					<compilerVersion>1.6</compilerVersion>
+					<fork>true</fork>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+	<modules>
+		<module>mokai-jms</module>
+		<module>mokai-mail</module>
+	</modules>
+</project>

@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<artifactId>mokai-sandbox</artifactId>
+		<groupId>org.mokai</groupId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>mokai-mail</artifactId>
+	
+	<name>Mokai Mail Connector</name>
+	<description>Mokai Mail Connector Module</description>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.mokai</groupId>
+			<artifactId>mokai-spi</artifactId>
+		</dependency>
+	</dependencies>
+</project>
